@@ -1104,9 +1104,11 @@ void xenos_autoset_mode(void)
 	case 0x1C: // HDMI_AUDIO - GHETTO MOD
 	case 0x1E: // HDMI
 	case 0x1F: // HDMI
-		mode = VIDEO_MODE_HDMI_720P;
+	        mode = VIDEO_MODE_HDMI_720P;
 		break;
 	case 0x43: // COMPOSITE - TV MODE
+	        mode = VIDEO_MODE_PAL60;
+	        break;
 	case 0x47: // SCART
 	case 0x54: // COMPOSITE + S-VIDEO
 	case 0x57: // NORMAL COMPOSITE
